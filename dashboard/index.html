@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <!-- perfil de usuario -->
+            <div class="profile">
+                <span class="noti">4</span>
+                <img src="/src/img/pic-profile.png" alt="profile" class="pic-profile">
+
+                <h1 class="name-profile">Samantha</h1>
+                <p class="email-profile">samantha@gmail.com</p>
+            </div>
+            <!-- navegacion -->
+            <nav class="nav">
+                <ul class="list-nav">
+                    <li class="item-list"><a href="#" class="link-item">Dashboard</a></li>
+                    <li class="item-list"><a href="#" class="link-item link-expenses">Expenses</a></li>
+                    <li class="item-list"><a href="#" class="link-item">Wallets</a></li>
+                    <li class="item-list"><a href="#" class="link-item">Summary</a></li>
+                    <li class="item-list"><a href="#" class="link-item">Accounts</a></li>
+                    <li class="item-list"><a href="#" class="link-item">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- contenido -->
+        <section class="content">
+
+            <!-- contenido principal -->
+            <div class="main-content">
+                <div class="main-header">
+
+                    <!-- titulo y fecha principal -->
+                    <div class="main-head">
+                        <div class="main-title">
+                            <h1 class="title">Expenses</h1>
+                            <p class="date-title">01 - 25 March, 2020</p>
+                        </div>
+
+                        <!-- usuarios -->
+                        <div class="users">
+                            <img class="user user1" src="/src/img/user1.png" alt="user" />
+                            <img class="user user2" src="/src/img/user2.png" alt="user" />
+                            <img class="user user3" src="/src/img/user3.png" alt="user" />
+                            <img class="add" src="/src/img/add-icon.svg" alt="add user" />
+                        </div>
+
+                    </div>
+                    <!-- estadiaticas -->
+                    <img class="stats-main" src="/src/img/stats.svg" alt="stats">
+                </div>
+
+
+                <div class="main-center">
+                    <!-- lista de gastos actuales -->
+                    <div class="actual-expenses">
+                        <h2 class="subtitle-center">Today</h2>
+                        <hr>
+                        <!-- lista de gastos -->
+                        <ul class="list-actual-expenses">
+                            <li class="item-actual-expenses">
+                                <div class="item-expenses">
+                                    <img class="expenses-icon" src="/src/img/grocery-icon.svg" alt="grocery">
+                                    <div class="expense-info">
+                                        <p class="expense-name">Grocery</p>
+                                        <p class="expense-amount">5:12 pm • Belanja di pasar</p>
+                                    </div>
+                                </div>
+
+                                <p class="amount-main">-333.000</p>
+                            </li>
+                            <li class="item-actual-expenses">
+                                <div class="item-expenses">
+
+                                    <img class="expenses-icon" src="/src/img/transport-icon.svg" alt="transport">
+                                    <div class="expense-info">
+                                        <p class="expense-name">Transportation</p>
+                                        <p class="expense-amount">5:12 pm • Naik bus umum</p>
+                                    </div>
+                                </div>
+                                <p class="amount-main">-15.000</p>
+
+                            </li>
+                            <li class="item-actual-expenses">
+                                <div class="item-expenses">
+                                    <img class="expenses-icon" src="/src/img/housing-icon.svg" alt="Housing">
+                                    <div class="expense-info">
+                                        <p class="expense-name">Housing</p>
+                                        <p class="expense-amount">5:12 pm • Bayar Listrik</p>
+                                    </div>
+
+                                </div>
+
+                                <p class="amount-main">-333.000</p>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- lista de gastos pasados -->
+                    <div class="last-expenses">
+
+                        <h2 class="subtitle-center">Monday, 23 March 2020</h2>
+                        <hr>
+
+                        <ul class="list-last-expenses">
+                            <li class="item-last-expenses">
+                                <div class="item-expenses">
+
+                                    <img class="expenses-icon" src="/src/img/food.svg" alt="food">
+                                    <div class="expense-info">
+                                        <p class="expense-name">Food and Drink</p>
+                                        <p class="expense-amount">5:12 pm • Makan Steak</p>
+                                    </div>
+                                </div>
+
+                                <p class="amount-main">-333.000</p>
+
+                            </li>
+                            <li class="item-last-expenses">
+                                <div class="item-expenses">
+
+                                    <img class="expenses-icon" src="/src/img/fun-icon.svg" alt="food">
+                                    <div class="expense-info">
+                                        <p class="expense-name">Entertainment</p>
+                                        <p class="expense-amount">5:12 pm • Nonton Bioskop</p>
+                                    </div>
+                                </div>
+                                <p class="amount-main">-333.000</p>
+
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- contenido derecho -->
+            <div class="right-content">
+
+                <!-- estadisticas -->
+                <div class="stats-right-content">
+                    <h1 class="title-right">Where your money go?</h1>
+                    <div class="resume-stats">
+                        <div class="stats-expense">
+                            <div class="stat-value">
+                                <p class="stat-name">Food and Drinks</p>
+                                <p class="stat-total">872.400</p>
+                            </div>
+                            <progress max="100" value="20"></progress>
+                        </div>
+                        <div class="stats-expense">
+                            <div class="stat-value">
+                                <p class="stat-name">Shopping</p>
+                                <p class="stat-total">1.378.200</p>
+                            </div>
+                            <progress max="100" value="40"></progress>
+                        </div>
+                        <div class="stats-expense">
+                            <div class="stat-value">
+                                <p class="stat-name">Housing</p>
+                                <p class="stat-total">928.000</p>
+                            </div>
+                            <progress max="100" value="30"></progress>
+                        </div>
+                        <div class="stats-expense">
+                            <div class="stat-value">
+                                <p class="stat-name">Transportation</p>
+                                <p class="stat-total">420.700</p>
+                            </div>
+                            <progress max="100" value="10"></progress>
+                        </div>
+                        <div class="stats-expense">
+                            <div class="stat-value">
+                                <p class="stat-name">Vehicle</p>
+                                <p class="stat-total">520.000</p>
+                            </div>
+                            <progress max="100" value="25"></progress>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- box tips -->
+                <div class="box-tip-right-content">
+                    <img class="img-box box" src="/src/img/box.svg" alt="box">
+                    <img class="img-box flower" src="/src/img/flower.svg" alt="flower">
+                    <!-- titulo y texto box tip -->
+                    <h1 class="box-tip-title">Save more money</h1>
+                    <p class="box-tip-text">eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim.</p>
+                    <button class="box-tip-button">view tips</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
